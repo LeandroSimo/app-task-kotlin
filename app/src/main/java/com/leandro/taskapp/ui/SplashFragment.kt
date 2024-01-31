@@ -32,7 +32,6 @@ class SplashFragment : Fragment() {
             this::checkAuth, 3000
         )
 
-        checkAuth()
     }
 
     private fun checkAuth() {
