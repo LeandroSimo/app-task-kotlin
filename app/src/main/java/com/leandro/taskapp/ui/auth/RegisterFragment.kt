@@ -1,25 +1,26 @@
 package com.leandro.taskapp.ui.auth
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.leandro.taskapp.R
-import com.leandro.taskapp.databinding.FragmentLoginBinding
+import androidx.fragment.app.Fragment
+import com.leandro.taskapp.databinding.FragmentRegisterBinding
 
-class LoginFragment : Fragment() {
 
-    private var _binding: FragmentLoginBinding? = null
+class RegisterFragment : Fragment() {
+
+    private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
