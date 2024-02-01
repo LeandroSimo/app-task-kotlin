@@ -9,12 +9,15 @@
         android:id="@+id/splashFragment"
         android:name="com.leandro.taskapp.ui.SplashFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
+        tools:layout="@layout/fragment_splash">
         <action
             android:id="@+id/action_splashFragment_to_authentication"
-            app:destination="@id/authentication" />
+            app:destination="@id/authentication"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
     </fragment>
-    <navigation android:id="@+id/authentication"
+    <navigation
+        android:id="@+id/authentication"
         app:startDestination="@id/loginFragment">
         <fragment
             android:id="@+id/recoverAccountFragment"
@@ -38,5 +41,13 @@
                 android:id="@+id/action_loginFragment_to_recoverAccountFragment"
                 app:destination="@id/recoverAccountFragment" />
         </fragment>
+        <action
+            android:id="@+id/action_global_homeFragment"
+            app:destination="@id/homeFragment" />
     </navigation>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.leandro.taskapp.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>
