@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.leandro.taskapp.R
 import com.leandro.taskapp.databinding.FragmentRecoverAccountBinding
+import com.leandro.taskapp.utils.initToolBar
 
 
 class RecoverAccountFragment : Fragment() {
@@ -22,6 +23,10 @@ class RecoverAccountFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initToolBar(binding.toolbar)
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
