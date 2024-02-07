@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.leandro.taskapp.R
 import com.leandro.taskapp.databinding.FragmentLoginBinding
@@ -31,7 +32,8 @@ class LoginFragment : Fragment() {
     private fun initListener() {
 
         binding.btnLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_global_homeFragment)
+            validateFields()
+
         }
 
 
@@ -42,6 +44,26 @@ class LoginFragment : Fragment() {
         binding.btnRecoverAccount.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_recoverAccountFragment)
         }
+    }
+
+    private fun validateFields() {
+        val email = binding.edtEmail.text.toString().trim()
+        val password = binding.edtPassword.text.toString().trim()
+
+
+        if (email.isNotEmpty()) {
+
+            if (password.isNotEmpty()) {
+                findNavController().navigate(R.id.action_global_homeFragment)
+            } else {
+                Toast.makeText(requireContext(), "Preencha o campo de senha", Toast.LENGTH_SHORT)
+                    .show()
+            }
+
+        } else {
+            Toast.makeText(requireContext(), "Preencha o campo de email", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     override fun onDestroyView() {

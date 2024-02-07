@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.leandro.taskapp.R
 import com.leandro.taskapp.databinding.FragmentFormTaskBinding
 import com.leandro.taskapp.utils.initToolBar
@@ -24,6 +25,32 @@ class FormTaskFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initToolBar(binding.toolbar)
+
+        initListener()
+    }
+
+    private fun initListener() {
+
+        binding.btnSaveTask.setOnClickListener {
+            validateFields()
+
+        }
+
+    }
+
+    private fun validateFields() {
+        val email = binding.edtTask.text.toString().trim()
+
+
+        if (email.isNotEmpty()) {
+
+            Toast.makeText(requireContext(), "Tarefa salva com sucesso", Toast.LENGTH_SHORT).show()
+
+        } else {
+            Toast.makeText(requireContext(), "Preencha o campo de tarefas", Toast.LENGTH_SHORT)
+                .show()
+        }
+
     }
 
     override fun onDestroyView() {

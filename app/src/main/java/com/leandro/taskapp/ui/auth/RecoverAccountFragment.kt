@@ -1,11 +1,11 @@
 package com.leandro.taskapp.ui.auth
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.leandro.taskapp.R
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.leandro.taskapp.databinding.FragmentRecoverAccountBinding
 import com.leandro.taskapp.utils.initToolBar
 
@@ -26,7 +26,34 @@ class RecoverAccountFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initToolBar(binding.toolbar)
+
+        initListener()
     }
+
+    private fun initListener() {
+
+        binding.btnRecoverAccount.setOnClickListener {
+            validateFields()
+        }
+
+
+    }
+
+    private fun validateFields() {
+        val email = binding.edtEmail.text.toString().trim()
+
+        if (email.isNotEmpty()) {
+
+            Toast.makeText(requireContext(), "Email enviado com sucesso", Toast.LENGTH_SHORT)
+                .show()
+
+        } else {
+            Toast.makeText(requireContext(), "Preencha com um email válido", Toast.LENGTH_SHORT)
+                .show()
+        }
+
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
