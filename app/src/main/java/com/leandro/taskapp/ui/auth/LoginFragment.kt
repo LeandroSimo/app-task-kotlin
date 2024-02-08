@@ -1,14 +1,14 @@
 package com.leandro.taskapp.ui.auth
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.leandro.taskapp.R
 import com.leandro.taskapp.databinding.FragmentLoginBinding
+import com.leandro.taskapp.utils.showBottomSheet
 
 class LoginFragment : Fragment() {
 
@@ -56,12 +56,11 @@ class LoginFragment : Fragment() {
             if (password.isNotEmpty()) {
                 findNavController().navigate(R.id.action_global_homeFragment)
             } else {
-                Toast.makeText(requireContext(), "Preencha o campo de senha", Toast.LENGTH_SHORT)
-                    .show()
+                showBottomSheet(messageDialog = R.string.password_empty)
             }
 
         } else {
-            Toast.makeText(requireContext(), "Preencha o campo de email", Toast.LENGTH_SHORT).show()
+            showBottomSheet(messageDialog = R.string.email_empty)
         }
 
     }

@@ -5,7 +5,19 @@
     <string name="status_todo">To Do</string>
     <string name="status_doing">Doing</string>
     <string name="status_done">Done</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Generic-->
+    <string name="text_title_warning">Atenção</string>
+    <string name="text_button_warning">Entendi</string>
+    <string name="email_empty">Preencha o campo de email</string>
+    <string name="password_empty">Preencha o campo de senha</string>
+
+    <!--    Regsiter Fragment-->
+    <string name="email_empty_register_fragment">Preencha com um email válido</string>
+    <string name="password_empty_register_fragment">Preencha o campo com uma  senha</string>
+
+    <!--    Form Task Fragment-->
+    <string name="description_empty_form_task_fragment">Preencha o campo de tarefas</string>
+
 
 </resources>

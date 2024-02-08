@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.leandro.taskapp.R
 import com.leandro.taskapp.databinding.FragmentFormTaskBinding
 import com.leandro.taskapp.utils.initToolBar
+import com.leandro.taskapp.utils.showBottomSheet
 
 class FormTaskFragment : Fragment() {
 
@@ -47,8 +48,7 @@ class FormTaskFragment : Fragment() {
             Toast.makeText(requireContext(), "Tarefa salva com sucesso", Toast.LENGTH_SHORT).show()
 
         } else {
-            Toast.makeText(requireContext(), "Preencha o campo de tarefas", Toast.LENGTH_SHORT)
-                .show()
+            showBottomSheet(messageDialog = R.string.description_empty_form_task_fragment)
         }
 
     }

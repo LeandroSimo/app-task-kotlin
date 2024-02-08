@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.leandro.taskapp.R
 import com.leandro.taskapp.databinding.FragmentRegisterBinding
 import com.leandro.taskapp.utils.initToolBar
+import com.leandro.taskapp.utils.showBottomSheet
 
 
 class RegisterFragment : Fragment() {
@@ -53,12 +54,11 @@ class RegisterFragment : Fragment() {
                 Toast.makeText(requireContext(), "Cadastro realizado com sucesso", Toast.LENGTH_SHORT)
                     .show()
             } else {
-                Toast.makeText(requireContext(), "Preencha o campo com uma  senha", Toast.LENGTH_SHORT)
-                    .show()
+                showBottomSheet(messageDialog = R.string.password_empty_register_fragment)
             }
 
         } else {
-            Toast.makeText(requireContext(), "Preencha com um email válido", Toast.LENGTH_SHORT).show()
+           showBottomSheet(messageDialog = R.string.email_empty_register_fragment)
         }
 
     }

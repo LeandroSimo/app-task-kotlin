@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.leandro.taskapp.R
 import com.leandro.taskapp.databinding.FragmentRecoverAccountBinding
 import com.leandro.taskapp.utils.initToolBar
+import com.leandro.taskapp.utils.showBottomSheet
 
 
 class RecoverAccountFragment : Fragment() {
@@ -48,8 +50,7 @@ class RecoverAccountFragment : Fragment() {
                 .show()
 
         } else {
-            Toast.makeText(requireContext(), "Preencha com um email válido", Toast.LENGTH_SHORT)
-                .show()
+            showBottomSheet(messageDialog = R.string.email_empty)
         }
 
     }
