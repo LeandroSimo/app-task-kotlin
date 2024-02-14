@@ -54,11 +54,11 @@ class RegisterFragment : Fragment() {
                 Toast.makeText(requireContext(), "Cadastro realizado com sucesso", Toast.LENGTH_SHORT)
                     .show()
             } else {
-                showBottomSheet(messageDialog = R.string.password_empty_register_fragment)
+                showBottomSheet(messageDialog = getString(R.string.password_empty_register_fragment))
             }
 
         } else {
-           showBottomSheet(messageDialog = R.string.email_empty_register_fragment)
+           showBottomSheet(messageDialog = getString(R.string.email_empty_register_fragment))
         }
 
     }

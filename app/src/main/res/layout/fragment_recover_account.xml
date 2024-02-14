@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     tools:context=".ui.auth.RecoverAccountFragment">
 
@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,13 +64,12 @@
 
             <EditText
                 android:id="@+id/edtEmail"
+                style="@style/EditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_edit_text"
                 android:hint="Digite seu e-mail"
-                android:inputType="textEmailAddress"
-                android:padding="16dp" />
+                android:inputType="textEmailAddress" />
 
 
             <com.google.android.material.button.MaterialButton
@@ -77,12 +77,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
-                android:background="@drawable/custom_button"
+                style="@style/ButtonTheme"
                 android:padding="8dp"
                 android:text="Enviar"
-                android:textColor="@color/color_default"
                 android:textSize="20dp"
-                app:backgroundTint="@null" />
+                 />
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -90,9 +89,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
+                android:indeterminateTint="@color/white"
                 android:visibility="invisible"
-                tools:visibility="visible"
-                android:indeterminateTint="@color/white" />
+                tools:visibility="visible" />
 
         </LinearLayout>
 

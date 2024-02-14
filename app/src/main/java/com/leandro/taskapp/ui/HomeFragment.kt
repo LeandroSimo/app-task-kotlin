@@ -9,7 +9,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.leandro.taskapp.R
 import com.leandro.taskapp.databinding.FragmentHomeBinding
 import com.leandro.taskapp.ui.adapter.ViewPagerAdapter
-import com.leandro.taskapp.ui.auth.DoingFragment
 
 
 class HomeFragment : Fragment() {

@@ -12,11 +12,28 @@
 
     <style name="Theme.TaskApp" parent="Base.Theme.TaskApp" />
 
+<!--    EditText-->
+    <style name="EditTextTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+<!--    Button-->
+    <style name="ButtonTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textColor">@color/color_default</item>
+        <item name="backgroundTint">@null</item>
+
+    </style>
+
+    <!--    TabLayout-->
     <style name="CustomTabLayout" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
+<!--    BottomSheetDialog-->
     <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
     </style>

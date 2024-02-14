@@ -1,4 +1,4 @@
-package com.leandro.taskapp.ui.auth
+package com.leandro.taskapp.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

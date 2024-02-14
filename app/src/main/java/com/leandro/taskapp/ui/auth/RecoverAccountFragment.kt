@@ -50,7 +50,7 @@ class RecoverAccountFragment : Fragment() {
                 .show()
 
         } else {
-            showBottomSheet(messageDialog = R.string.email_empty)
+            showBottomSheet(messageDialog = getString(R.string.email_empty))
         }
 
     }

@@ -56,11 +56,11 @@ class LoginFragment : Fragment() {
             if (password.isNotEmpty()) {
                 findNavController().navigate(R.id.action_global_homeFragment)
             } else {
-                showBottomSheet(messageDialog = R.string.password_empty)
+                showBottomSheet(messageDialog = getString(R.string.password_empty))
             }
 
         } else {
-            showBottomSheet(messageDialog = R.string.email_empty)
+            showBottomSheet(messageDialog = getString(R.string.email_empty))
         }
 
     }

@@ -48,7 +48,7 @@ class FormTaskFragment : Fragment() {
             Toast.makeText(requireContext(), "Tarefa salva com sucesso", Toast.LENGTH_SHORT).show()
 
         } else {
-            showBottomSheet(messageDialog = R.string.description_empty_form_task_fragment)
+            showBottomSheet(messageDialog = getString(R.string.description_empty_form_task_fragment))
         }
 
     }

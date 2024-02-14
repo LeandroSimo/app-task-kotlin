@@ -10,8 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
@@ -54,13 +53,12 @@
 
             <EditText
                 android:id="@+id/edtTask"
+                style="@style/EditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/bg_edit_text"
                 android:hint="Criar nova tela de login"
                 android:inputType="text"
-                android:padding="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -91,8 +89,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="To Do"
                     android:checked="true"
+                    android:text="To Do"
                     android:textColor="@color/white"
                     app:buttonTint="@color/white" />
 
@@ -118,16 +116,15 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSaveTask"
+                style="@style/ButtonTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/custom_button"
                 android:padding="8dp"
                 android:text="Salvar"
                 android:textAllCaps="false"
-                android:textColor="@color/color_default"
                 android:textSize="20dp"
-                app:backgroundTint="@null"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"

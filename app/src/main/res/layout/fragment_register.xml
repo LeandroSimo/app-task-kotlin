@@ -57,13 +57,12 @@
 
             <EditText
                 android:id="@+id/edtEmail"
+                style="@style/EditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_edit_text"
                 android:hint="Digite seu e-mail"
-                android:inputType="textEmailAddress"
-                android:padding="16dp" />
+                android:inputType="textEmailAddress" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -74,25 +73,23 @@
 
             <EditText
                 android:id="@+id/edtPassword"
+                style="@style/EditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="@drawable/bg_edit_text"
                 android:hint="Digite sua senha"
-                android:inputType="textPassword"
-                android:padding="16dp" />
+                android:inputType="textPassword" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"
+                style="@style/ButtonTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:layout_marginTop="18dp"
-                android:background="@drawable/custom_button"
                 android:padding="8dp"
                 android:text="Criar conta"
-                android:textColor="@color/color_default"
-                android:textSize="20dp"
-                app:backgroundTint="@null" />
+                android:textSize="20dp" />
 
             <ProgressBar
                 android:id="@+id/progressBar"
