@@ -30,7 +30,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Nova tarefa"
+                    android:text="@string/text_title_form_task_fragment"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
             </com.google.android.material.appbar.MaterialToolbar>
@@ -46,7 +46,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Descrição"
+                android:text="@string/description_form_task_fragment"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:hint="Criar nova tela de login"
+                android:hint="@string/hint_text_form_task_fragment"
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -69,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Status"
+                android:text="@string/status_form_task_fragment"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edtTask" />
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:checked="true"
-                    android:text="To Do"
+                    android:text="@string/todo_task_fragment"
                     android:textColor="@color/white"
                     app:buttonTint="@color/white" />
 
@@ -99,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Doing"
+                    android:text="@string/doing_task_fragment"
                     android:textColor="@color/white"
                     app:buttonTint="@color/white" />
 
@@ -108,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Done"
+                    android:text="@string/done_task_fragment"
                     android:textColor="@color/white"
                     app:buttonTint="@color/white" />
 
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:padding="8dp"
-                android:text="Salvar"
+                android:text="@string/text_button_form_task_fragment"
                 android:textAllCaps="false"
                 android:textSize="20dp"
 

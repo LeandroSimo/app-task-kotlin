@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="E-mail"
+            android:text="@string/email_text"
             android:textColor="@color/white" />
 
         <EditText
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:hint="Digite seu e-mail"
+            android:hint="@string/hint_edit_email"
             android:inputType="textEmailAddress" />
 
 
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Senha"
+            android:text="@string/password_text"
             android:textColor="@color/white" />
 
         <EditText
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:hint="Digite sua senha"
+            android:hint="@string/hint_edit_senha"
             android:inputType="textPassword" />
 
         <com.google.android.material.button.MaterialButton
@@ -57,7 +57,7 @@
             android:layout_marginTop="18dp"
             android:background="@drawable/custom_button"
             android:padding="8dp"
-            android:text="Login"
+            android:text="@string/text_button_login_fragment"
             android:textSize="20dp" />
 
         <LinearLayout
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Criar conta"
+                android:text="@string/text_button_register_fragment"
                 android:textColor="@color/white" />
 
             <TextView
@@ -79,7 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Recuperar conta"
+                android:text="@string/text_button_recover_account"
                 android:textAlignment="textEnd"
                 android:textColor="@color/white" />
 
